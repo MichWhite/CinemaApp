@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:onClick="editButtonPressed"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MovieTitle"
+            android:id="@+id/textView"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+                android:id="@+id/row_title"
+                android:text="@string/defaultTitle"
+                android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_alignStart="@+id/row_price" />" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cinema Name"
+            android:id="@+id/textView2"
+            android:textColor="#000000"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:id="@+id/row_cinema"
+                android:text="@string/defaultCinema"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_above="@+id/textView3"
+            android:layout_alignStart="@+id/row_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:id="@+id/textView3"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+                android:id="@+id/row_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/defaultPrice"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_above="@+id/textView4"
+            android:layout_alignStart="@+id/row_age_rating" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age Rating"
+            android:id="@+id/textView4"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+                android:id="@+id/row_age_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/defaultAge"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_above="@+id/textView6"
+            android:layout_alignStart="@+id/row_date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movieTime"
+            android:id="@+id/textView5"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+                android:id="@+id/row_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/defaultTime"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_alignStart="@+id/row_date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movieDate"
+            android:id="@+id/textView6"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+                android:id="@+id/row_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/defaultCinema"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_marginStart="65dp"
+            android:layout_above="@+id/textView5"
+            android:layout_toEndOf="@+id/textView2" />
+
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/deleteButton"
+            android:background="@drawable/ic_delete"
+            android:onClick="deleteButtonPressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_movieId"
+            android:text="@string/defaultTitle"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:onClick="viewTrailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_play"
+            android:id="@+id/playTrailer"
+            android:layout_below="@+id/deleteButton"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

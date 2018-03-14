@@ -1,0 +1,1 @@
+include ':app', ':java-json', ':jsoup-1.8.3'
